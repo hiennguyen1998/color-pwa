@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node": "node app.js",
+    "react": "cd front-end && cd scan-pwa && npm start",
+    "all": "concurrently \"npm run node\" \"npm run react\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "artillery": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.11",
+    "morgan": "^1.10.0",
+    "string-similarity": "^4.0.4"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  }
+}
