@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node": "node app.js",
-    "react": "cd scan-pwa && npm start",
+    "react": "cd client && npm start",
     "all": "concurrently \"npm run node\" \"npm run react\""
   },
   "author": "",
