@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node": "node app.js",
-    "react": "cd front-end && cd scan-pwa && npm start",
+    "react": "cd scan-pwa && npm start",
     "all": "concurrently \"npm run node\" \"npm run react\""
   },
   "author": "",
@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "artillery": "^1.7.2",
+    "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
