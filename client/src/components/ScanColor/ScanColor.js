@@ -14,6 +14,7 @@ function ScanColor(props) {
 
   const canvasRef = useRef();
   const videoRef = useRef();
+  const viewRef = useRef();
 
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
@@ -68,43 +69,43 @@ function ScanColor(props) {
 
     canvasRef.current.toBlob(
       (blob) => toBase64(blob, onHandlImg),
-      "image/webp",
+      "image/png",
       0.8
     );
     props.handlChangePage(3);
   };
-
   return (
     <div
-      className={classes["wrapper"]}
+      className={classes.wrapper}
       onTouchStart={handlTouchStart}
       onTouchEnd={handlTouchEnd}
+      style={{ height: window.innerHeight, width: window.innerWidth }}
+      ref={viewRef}
     >
       <canvas
         ref={canvasRef}
         className={classes.canvas}
         style={{
-          width: "70%",
+          width: "80%",
+          height: "25%",
           position: "relative",
-          display: "block",
+          display: "none",
+          // zIndex: 100,
         }}
       ></canvas>
-      <div className={classes["container"]}>
+      <div className={classes.container}>
         <div className={classes["container-text"]}>
-          <h1 className={classes["headline"]}>
+          <h1 className={classes.headline}>
             Veuillez scanner une référence de couleur
           </h1>
         </div>
-        <div className={classes["container-camera"]}>
-          <div className={classes.view}>
-            <video
-              ref={videoRef}
-              onCanPlay={handleCanPlay}
-              autoPlay
-              playsInline
-              style={{ height: window.innerHeight, width: window.innerWidth }}
-            ></video>
-          </div>
+        <div className={classes["container-scan"]}>
+          <video
+            ref={videoRef}
+            onCanPlay={handleCanPlay}
+            autoPlay
+            playsInline
+          ></video>
           <div className={classes.backdrop}></div>
           <div className={classes["btn-wrapper"]}>
             <img
