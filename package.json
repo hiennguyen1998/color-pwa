@@ -5,8 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node": "node app.js",
-    "react": "cd client && npm start",
-    "start": "concurrently \"npm run node\" \"npm run react\""
+    "react": "cd client && npm install && npm run build",
+    "start": "concurrently \"npm run react\" \"npm run node\" "
   },
   "author": "",
   "license": "ISC",

@@ -1,6 +1,6 @@
 import axiosClient from "./axiosClient";
 
-const url = "http://localhost:7003/api/v1/colors";
+const url = "/api/v1/colors";
 
 const ColorApi = {
   getColor: (text) => {

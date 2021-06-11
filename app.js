@@ -23,8 +23,13 @@ mongoose
     .then(()=>console.log("DB connection successful"))
     .catch((err)=> console.log("Error: "+ err.message))
 
+app.use(express.static(`${__dirname}/client/build`))
 app.use("/api/v1/colors",cors(),colorRoute)
 
+app.get("/",(req,res)=>{
+    console.log("index")
+    res.sendFile(`${__dirname}/client/build/index.html`)
+})
 app.listen(PORT,() => {
     console.log("Server run on port "+ PORT)
 })
