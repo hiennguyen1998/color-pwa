@@ -1,0 +1,35 @@
+{
+  "short_name": "Color Reader",
+  "name": "Color Reader",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "maskable.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "dir": "ltr",
+  "scope": "/",
+  "start_url": "/"
+}

@@ -1,0 +1,23 @@
+.total {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+h5 {
+  text-align: center;
+  color: #085099;
+}
+.actions {
+  text-align: right;
+}
+
+.btn-close {
+  position: fixed;
+  right: 2%;
+  top: 3%;
+  background-color: #085099;
+  border-radius: 50%;
+  padding: 2px;
+  z-index: 4;
+  height: 2rem;
+}

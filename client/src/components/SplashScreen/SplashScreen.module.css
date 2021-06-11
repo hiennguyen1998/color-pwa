@@ -1,0 +1,61 @@
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+.main-splash-screen {
+  height: 100%;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.wrap-nordprint {
+  width: 40%;
+}
+
+.wrap-logo {
+  width: 80%;
+}
+
+.wrap-btn-scan {
+  width: 35%;
+}
+.scan {
+  cursor: pointer;
+}
+
+.wrap-footer {
+  width: 100%;
+}
+
+.line-footer {
+  color: #1c1c1c;
+  font-size: 1em;
+  text-align: center;
+}
+.logo,
+.scan,
+.footer,
+.nordprint {
+  width: 100%;
+}
+.version {
+  text-align: center;
+  font-size: 0.7em;
+}
+@media only screen and (min-width: 1290px) {
+  .wrapper {
+    width: 40%;
+  }
+
+  .line-footer {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .line-footer {
+    font-size: 1.5em;
+  }
+}
