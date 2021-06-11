@@ -23,9 +23,6 @@ mongoose
     .then(()=>console.log("DB connection successful"))
     .catch((err)=> console.log("Error: "+ err.message))
 
-app.get("/", (req,res)=>{
-    res.send('Hello world')
-})
 app.use("/api/v1/colors",cors(),colorRoute)
 
 app.listen(PORT,() => {
